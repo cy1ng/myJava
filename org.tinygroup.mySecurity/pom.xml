@@ -27,6 +27,21 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        
+         <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.2</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        
         <dependency>
             <groupId>org.tinygroup</groupId>
             <artifactId>org.tinygroup.serviceprocessor</artifactId>
@@ -87,6 +102,11 @@
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+        	<groupId>org.springframework.security</groupId>
+        	<artifactId>spring-security-web</artifactId>
+        	<version>3.0.3.RELEASE</version>
         </dependency>
     </dependencies>
     <build>
