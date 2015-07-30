@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+<hibernate-mapping package="com.cying.testSecur.domain">  
+  
+    <class name="User" table="users">  
+        <id name="username" column="USERNAME">  
+            <generator class="assigned" /> 
+        </id>  
+        <property name="password" type="string" column="PASSWORD" />  
+        <property name="enable" type="int" column="ENABLE" />
+        <property name="usernamecn" type="string" column="USERNAMECN" />    
+    </class>  
+  
+</hibernate-mapping>

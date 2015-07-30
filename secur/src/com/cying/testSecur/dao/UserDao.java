@@ -12,9 +12,10 @@ public class UserDao {
 	protected static Logger logger = Logger.getLogger("dao");
 
 	public DbUser getDatabase(String username) {
-
+        
+		logger.info("µ˜”√¡ÀgetDatabase£°");
 		List<DbUser> users = internalDatabase();
-
+         
 		for (DbUser dbUser : users) {
 			if (dbUser.getUsername().equals(username) == true) {
 				logger.debug("User found");
